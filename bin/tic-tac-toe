@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'tic-tac-toe'
+
+board = Board.new
+player_one = Player.new('X')
+player_two = Player.new('O')
+
+until board.game_over?
+  puts board
+  print "Make a move, player 1 (1-9): "
+  position = gets
+  player_one.make_move(board, position)
+  break if board.game_over?
+  puts board
+  print "Make a move, player 2 (1-9): "
+  position = gets
+  player_two.make_move(board, position)
+end
+
+puts board
+winner = board.get_winner
+if winner
+  puts "#{winner} Won!"
+else
+  puts "Tie game!"
+end

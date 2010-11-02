@@ -1,6 +1,6 @@
 = tic-tac-toe
 
-Description goes here.
+A very simple tic-tac-toe game.
 
 == Note on Patches/Pull Requests
  
