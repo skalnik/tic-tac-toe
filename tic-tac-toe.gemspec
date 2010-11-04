@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mike Skalnik"]
-  s.date = %q{2010-11-02}
+  s.date = %q{2010-11-04}
   s.default_executable = %q{tic-tac-toe}
   s.description = %q{A very simple tic-tac-toe game. Run `tic-tac-toe` to play.}
   s.email = %q{mike.skalnik@gmail.com}
@@ -25,9 +25,13 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "bin/tic-tac-toe",
      "lib/tic-tac-toe.rb",
+     "lib/tic-tac-toe/board.rb",
+     "lib/tic-tac-toe/player.rb",
      "test/helper.rb",
-     "test/test_tic-tac-toe.rb"
+     "test/test_tic-tac-toe.rb",
+     "tic-tac-toe.gemspec"
   ]
   s.homepage = %q{http://github.com/skalnik/tic-tac-toe}
   s.rdoc_options = ["--charset=UTF-8"]
